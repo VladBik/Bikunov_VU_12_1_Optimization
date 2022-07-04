@@ -12,7 +12,7 @@ namespace Runner
         private float _lastZ = 30f;
         private int _levelsLength = 1024 * 1024;
 
-        [SerializeField, Range(1, 100), Tooltip("Это здоровье игрока, не перепутай")]
+        [SerializeField, Range(1, 100), Tooltip("Это здоровье игрока")]
         private int Health = 3;
         [SerializeField]
         private Transform _player;

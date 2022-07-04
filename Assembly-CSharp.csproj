@@ -57,7 +57,6 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BasePlayerController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\NewPlayerController.cs" />
      <Compile Include="Assets\Scripts\OldPlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerStatsComponent.cs" />

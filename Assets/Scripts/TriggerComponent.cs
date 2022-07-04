@@ -2,7 +2,7 @@
 
 namespace Runner
 {
-    public class TriggerComponent : MonoBehaviour
+    public class TriggerComponent : GameManager
     {
         [SerializeField]
         private Collider _collider;
@@ -13,9 +13,10 @@ namespace Runner
         void Start()
         {
             _collider.isTrigger = true;
+            
         }
-
-		private void OnTriggerEnter(Collider other)
+        
+        private void OnTriggerEnter(Collider other)
 		{
             if (_isDamage)
             {
@@ -23,8 +24,9 @@ namespace Runner
             }
             else
             {
-                GameManager.Self.UpdateLevel();
-			}
+                UpdateLevel();
+
+            }
         }
 	}
 }
